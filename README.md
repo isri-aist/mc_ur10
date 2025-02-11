@@ -25,6 +25,7 @@ Create a folder ur10 in `mc_rtc_superbuild/extensions` and create a `CMakeLists.
 ```cmake
 CreateCatkinWorkspace(ID ur_ws DIR "ur_ws" CATKIN_MAKE)
 
+AptInstall(ros-$ENV{ROS_DISTRO}-ur-description)
 
 AddCatkinProject(mc_ur10_description WORKSPACE ur_ws
   GITHUB isri-aist/mc_ur10_description
