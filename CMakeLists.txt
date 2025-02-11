@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.1)
 
 set(CXX_DISABLE_WERROR 1)
-set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD 17)
 
 set(PROJECT_NAME mc_ur10)
 set(PROJECT_DESCRIPTION "UR10 robot module for mc_rtc")
