@@ -13,6 +13,7 @@ enable_testing()
 find_package(mc_rtc REQUIRED)
 
 add_subdirectory(src)
+add_subdirectory(description)
 
 if(BUILD_TESTING)
   add_subdirectory(tests)

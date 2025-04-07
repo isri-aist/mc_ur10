@@ -1,0 +1,2 @@
+xmlModelPath: "@ROBOT_XML_MODEL_PATH@"
+pdGainsPath: "@ROBOT_PDGAINS_PATH@"

@@ -8,12 +8,12 @@ This package contains a software representation, or a robot module, of [UR10](ht
 
 ## Build instructions
 
-```
+```bash
 $ git clone https://github.com/isri-aist/mc_ur10
 $ cd mc_ur10
 $ mkdir build
 $ cd build
-$ cmake ..
+$ cmake .. # -DINSTALL_MUJOCO_DESCRIPTION=ON 
 $ make
 $ sudo make install
 ```
@@ -35,8 +35,11 @@ AddCatkinProject(mc_ur10_description WORKSPACE ur_ws
 AddProject(mc_ur10
   GITHUB isri-aist/mc_ur10
   DEPENDS mc_ur10_description
+  CMAKE_ARGS -DINSTALL_MUJOCO_DESCRIPTION=OFF 
 )
 ```
+
+If you want to install mujoco description set **`-DINSTALL_MUJOCO_DESCRIPTION=ON`**
 
 ## Basic run 
 
@@ -66,4 +69,10 @@ mc_rtc_ticker
 ```bash
 mc_rtc_ticker
 ros2 launch mc_rtc_ticker display.launch
+```
+
+* Mujoco
+
+```bash
+mc_mujoco
 ```
